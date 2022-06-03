@@ -7,8 +7,8 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 function DetailsPage() {
 
-    const [seconds, setSeconds] = useState(59);
-    const [minutes, setMinutes] = useState(4);
+    const [seconds, setSeconds] = useState(10);
+    const [minutes, setMinutes] = useState(0);
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -75,6 +75,27 @@ function DetailsPage() {
             return false;
         }
     }
+
+    var timer;
+
+    useEffect(() => {
+        timer = setInterval(() => {
+           
+            setSeconds(seconds-1);
+            if(seconds == 0){
+                if(minutes > 0){
+                    setMinutes(minutes - 1);
+                    setSeconds(59)
+                }
+                else{
+                    setMinutes(0);
+                    setSeconds(0)
+                }
+            }
+
+        }, 1000);
+        return () => clearInterval(timer)
+    })
 
     // useEffect(() => {
         // var time = new Date().getTime();
@@ -178,6 +199,10 @@ function DetailsPage() {
                         <button id="submitbtn" onClick={() => formSubmit()}>Submit</button>
                         <button id="resetbtn" onClick={() => resetValues()}>Reset</button>
                     </div>
+                    {minutes==0 && seconds==0 &&
+                    <div className='timeup'>
+                        Time up !!
+                    </div>}
                 </div>}
 
                 {submitStep == 2 &&
