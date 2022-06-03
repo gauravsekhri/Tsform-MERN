@@ -135,7 +135,7 @@ input, textarea{
     background: #fff;
     top: 0;
     left: 0;
-    height: 95vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,4 +252,26 @@ th{
     font-weight: 700;
     font-size: 25px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .img_container{
+        display: none;
+    }
+
+    .form_container{
+        width: -webkit-fill-available;
+    }
+
+    .outer_container{
+        width: 55%;
+        min-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .outer_container{
+        width: -webkit-fill-available;
+    }
 }

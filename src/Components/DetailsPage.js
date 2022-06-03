@@ -97,52 +97,6 @@ function DetailsPage() {
         return () => clearInterval(timer)
     })
 
-    // useEffect(() => {
-        // var time = new Date().getTime();
-    //     console.log((time % (1000 * 60)) / 1000);
-    // console.log(time);
-    //     var sec = Math.floor((time % (1000 * 60)) / 1000);
-    //     setSeconds(sec)
-    // },[]);
-
-        // const useCountdown = (targetDate) => {
-        //     // const countDownDate = new Date(targetDate).getTime();
-        
-        //     const [countDown, setCountDown] = useState(
-        //         new Date().getTime()
-        //     );
-        
-        //     useEffect(() => {
-        //         setInterval(() => {
-        //             setCountDown(countDown - 1);
-        //         }, 1000);
-            
-        //         // return () => clearInterval(interval);
-        //     }, [new Date().getTime()]);
-        
-        //     return getReturnValues(countDown);
-        // };
-      
-        // const getReturnValues = (countDown) => {
-        //     const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
-        //     const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
-        //     // console.log(seconds, minutes)
-        //     return [minutes, seconds];
-        // };
-
-        // var time = new Date().getTime();
-        // // var reqtime = Number(time) + 300000;
-        // var reqtime = 5 * 60 * 1000;
-        // reqtime = Number(reqtime);
-        // // console.log(reqtime)
-        // const [minutes, seconds] = useCountdown();
-        // // 1654186009037
-
-        // setInterval(() => {
-        //     setSeconds(seconds - 1)
-        // }, 1000);
-
-
     return (
         <>
             <div className='navbar'>
