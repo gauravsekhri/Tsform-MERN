@@ -179,6 +179,15 @@ th{
     margin-top: 20px;
 }
 
+.phone_container{
+    display: flex;
+    align-items: center;
+}
+
+.phone_container > div{
+    margin-right: 15px;
+}
+
 .Thankyou_msg{
     display: flex;
     align-items: center;

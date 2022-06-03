@@ -165,7 +165,10 @@ function DetailsPage() {
 
 
                             <div className='input_label'>Telephone Number</div>
-                            <input type="number" placeholder='Telephone Number' name="phone" onChange={(e) => setPhone(e.target.value)} value={phone}></input>
+                            <div className='phone_container'>
+                                <div>+91</div>
+                                <input type="number" placeholder='Telephone Number' name="phone" onChange={(e) => setPhone(e.target.value)} value={phone}></input>
+                            </div>
                             <div className='errmsg'>{showError && phone.length==0 ? "Phone is required." : ""}</div>
 
 
