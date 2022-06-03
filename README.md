@@ -8,6 +8,8 @@ Here is the deployment [link](https://tsform.netlify.app).
 
 ## To Run this project
 
+Download/clone the project and follow the below steps: 
+
 #### For Backend
 
 1. Open cmd and run "npm install"
