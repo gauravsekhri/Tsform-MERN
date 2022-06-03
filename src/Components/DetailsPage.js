@@ -7,8 +7,8 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 function DetailsPage() {
 
-    const [seconds, setSeconds] = useState(10);
-    const [minutes, setMinutes] = useState(0);
+    const [seconds, setSeconds] = useState(59);
+    const [minutes, setMinutes] = useState(4);
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
